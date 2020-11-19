@@ -1,0 +1,11 @@
+server:
+  port: 3201
+eureka:
+  instance:
+    appname: feign-service
+  client:
+    service-url:
+      - http://localhost:8761/eureka/
+feign:
+  hystrix:
+    enabled: true
